@@ -3,27 +3,27 @@ import { StatusBar } from "react-native";
 import { Searchbar } from "react-native-paper";
 import { RestaurantInfoCard } from "../components/restaurant-info-card.conmponent";
 
-const RestaurantsScreenWrapper = styled.SafeAreaView`
+const RestaurantsScreenContainer = styled.SafeAreaView`
   flex: 1;
-  margin-top: ${StatusBar.currentHeight}px;
+  ${StatusBar.currentHeight && `margin-top: ${StatusBar.currentHeight}px`};
 `;
 
-const SearchBarWrapper = styled.View`
-  padding: 16px;
+const SearchContainer = styled.View`
+  padding: ${(props) => props.theme.space[3]};
 `;
 
-const ListWrapper = styled.View`
+const ListContainer = styled.View`
   flex: 1;
-  padding: 16px;
+  padding: ${(props) => props.theme.space[3]};
 `;
 
 export const RestaurantsScreen = () => (
-  <RestaurantsScreenWrapper>
-    <SearchBarWrapper>
+  <RestaurantsScreenContainer>
+    <SearchContainer>
       <Searchbar />
-    </SearchBarWrapper>
-    <ListWrapper>
+    </SearchContainer>
+    <ListContainer>
       <RestaurantInfoCard />
-    </ListWrapper>
-  </RestaurantsScreenWrapper>
+    </ListContainer>
+  </RestaurantsScreenContainer>
 );
