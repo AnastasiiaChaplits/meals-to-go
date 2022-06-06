@@ -1,14 +1,11 @@
 import { Searchbar } from "react-native-paper";
 import { RestaurantInfoCard } from "../components/restaurant-info-card.conmponent";
 import { Spacer } from "../../../components/spacer/spacer.component";
-import {
-  RestaurantsScreenContainer,
-  SearchContainer,
-  RestaurantList,
-} from "./restsurants.styles";
+import { SearchContainer, RestaurantList } from "./restsurants.styles";
+import { SafeArea } from "../../../components/utility/safe-area.component";
 
 export const RestaurantsScreen = () => (
-  <RestaurantsScreenContainer>
+  <SafeArea>
     <SearchContainer>
       <Searchbar />
     </SearchContainer>
@@ -36,5 +33,5 @@ export const RestaurantsScreen = () => (
       )}
       keyExtractor={(item) => item.name}
     />
-  </RestaurantsScreenContainer>
+  </SafeArea>
 );
