@@ -1,8 +1,13 @@
 import React, { useContext } from "react";
-import { Searchbar } from "react-native-paper";
+import { Searchbar, Colors } from "react-native-paper";
 import { RestaurantInfoCard } from "../components/restaurant-info-card.conmponent";
 import { Spacer } from "../../../components/spacer/spacer.component";
-import { SearchContainer, RestaurantList } from "./restsurants.styles";
+import {
+  SearchContainer,
+  RestaurantList,
+  Loading,
+  LoadingContainer,
+} from "./restsurants.styles";
 import { SafeArea } from "../../../components/utility/safe-area.component";
 import { RestaurantContext } from "../../../services/restaurants/restaurants.context";
 
@@ -11,6 +16,11 @@ export const RestaurantsScreen = () => {
 
   return (
     <SafeArea>
+      {isLoading && (
+        <LoadingContainer>
+          <Loading size={50} animating={true} color={Colors.blue300} />
+        </LoadingContainer>
+      )}
       <SearchContainer>
         <Searchbar />
       </SearchContainer>
