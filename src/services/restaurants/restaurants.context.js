@@ -6,7 +6,7 @@ import {
 } from "./restaurants.service";
 import { LocationContext } from "../location/location.context";
 
-export const RestaurantContext = createContext();
+export const RestaurantsContext = createContext();
 
 export const RestaurantsContextProvider = ({ children }) => {
   const [restaurants, setRestaurants] = useState([]);
@@ -39,8 +39,8 @@ export const RestaurantsContextProvider = ({ children }) => {
   };
 
   return (
-    <RestaurantContext.Provider value={{ restaurants, isLoading, error }}>
+    <RestaurantsContext.Provider value={{ restaurants, isLoading, error }}>
       {children}
-    </RestaurantContext.Provider>
+    </RestaurantsContext.Provider>
   );
 };
