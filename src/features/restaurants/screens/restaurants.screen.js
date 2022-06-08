@@ -10,10 +10,10 @@ import {
   LoadingContainer,
 } from "./restsurants.styles";
 import { SafeArea } from "../../../components/utility/safe-area.component";
-import { RestaurantContext } from "../../../services/restaurants/restaurants.context";
+import { RestaurantsContext } from "../../../services/restaurants/restaurants.context";
 
 export const RestaurantsScreen = ({ navigation }) => {
-  const { restaurants, isLoading } = useContext(RestaurantContext);
+  const { restaurants, isLoading } = useContext(RestaurantsContext);
 
   return (
     <SafeArea>
