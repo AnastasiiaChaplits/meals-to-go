@@ -1,9 +1,9 @@
 import React, { useContext } from "react";
-import { Searchbar, Colors } from "react-native-paper";
+import { Colors } from "react-native-paper";
 import { RestaurantInfoCard } from "../components/restaurant-info-card.conmponent";
 import { Spacer } from "../../../components/spacer/spacer.component";
+import { Search } from "../components/search.component";
 import {
-  SearchContainer,
   RestaurantList,
   Loading,
   LoadingContainer,
@@ -12,7 +12,7 @@ import { SafeArea } from "../../../components/utility/safe-area.component";
 import { RestaurantContext } from "../../../services/restaurants/restaurants.context";
 
 export const RestaurantsScreen = () => {
-  const { restaurants, isLoading, error } = useContext(RestaurantContext);
+  const { restaurants, isLoading } = useContext(RestaurantContext);
 
   return (
     <SafeArea>
@@ -21,9 +21,7 @@ export const RestaurantsScreen = () => {
           <Loading size={50} animating={true} color={Colors.blue300} />
         </LoadingContainer>
       )}
-      <SearchContainer>
-        <Searchbar />
-      </SearchContainer>
+      <Search />
       <RestaurantList
         data={restaurants}
         renderItem={({ item }) => (
