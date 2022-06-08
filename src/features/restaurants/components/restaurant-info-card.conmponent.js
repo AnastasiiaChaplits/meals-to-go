@@ -1,3 +1,4 @@
+import React from "react";
 import { SvgXml } from "react-native-svg";
 
 import star from "../../../../assets/star";
@@ -22,7 +23,7 @@ export const RestaurantInfoCard = ({ restaurant = {} }) => {
     photos = [
       "https://www.foodiesfeed.com/wp-content/uploads/2019/06/top-view-for-box-of-2-burgers-home-made-600x899.jpg",
     ],
-    address = "100 some random screet",
+    address,
     isOpenNow = true,
     rating = 4,
     isClosedTemporarily = true,
