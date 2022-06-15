@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { TouchableOpacity } from "react-native";
 import { Colors } from "react-native-paper";
-import { RestaurantInfoCard } from "../components/restaurant-info-card.conmponent";
+import { RestaurantInfoCard } from "../components/restaurant-info-card.component";
 import { Spacer } from "../../../components/spacer/spacer.component";
 import { Search } from "../components/search.component";
 import {
