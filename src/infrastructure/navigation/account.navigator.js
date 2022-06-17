@@ -11,7 +11,7 @@ export const AccountNavigator = () => {
   return (
     <Stack.Navigator headerMode="none">
       <Stack.Screen name="Main" component={AccountScreen} />
-      <Stack.Screen name="login" component={LoginScreen} />
+      <Stack.Screen name="Login" component={LoginScreen} />
       <Stack.Screen name="Register" component={RegisterScreen} />
     </Stack.Navigator>
   );
