@@ -16,12 +16,13 @@ const AvatarContainer = styled.View`
 
 export const SettingsScreen = ({ navigation }) => {
   const { onLogout, user } = useContext(AuthenticationContext);
+  console.log(user);
   return (
     <SafeArea>
       <AvatarContainer>
         <Avatar.Icon size={180} icon="human" backgroundColor="#2182BD" />
         <Spacer position="top" size="large">
-          <Text variant="label">{user.email}</Text>
+          <Text variant="label">{user.user.email}</Text>
         </Spacer>
       </AvatarContainer>
       <Text />
