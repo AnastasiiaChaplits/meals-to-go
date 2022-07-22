@@ -37,7 +37,7 @@ export const AuthInput = styled(TextInput)`
 `;
 
 export const Title = styled(Text)`
-  text-size: 30px;
+  font-size: 30px;
 `;
 
 export const ErrorContainer = styled.View`
