@@ -7,7 +7,6 @@ import { MapScreen } from "../../features/map/screens/map.screen";
 import { FavouritesContextProvider } from "../../services/favourites/favourites.context";
 import { LocationContextProvider } from "../../services/location/location.context";
 import { RestaurantsContextProvider } from "../../services/restaurants/restaurants.context";
-import { SettingsScreen } from "../../features/settings/screens/settings.screen";
 import { SettingsNavigator } from "./settings.navigator";
 
 const Tab = createBottomTabNavigator();
