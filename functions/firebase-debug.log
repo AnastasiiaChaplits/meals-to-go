@@ -1,0 +1,1041 @@
+[debug] [2022-07-25T12:34:45.170Z] ----------------------------------------------------------------------
+[debug] [2022-07-25T12:34:45.171Z] Command:       /usr/local/bin/node /Users/anastasiiachaplits/.npm-global/bin/firebase emulators:start --only functions
+[debug] [2022-07-25T12:34:45.172Z] CLI Version:   11.3.0
+[debug] [2022-07-25T12:34:45.172Z] Platform:      darwin
+[debug] [2022-07-25T12:34:45.172Z] Node Version:  v16.14.2
+[debug] [2022-07-25T12:34:45.175Z] Time:          Mon Jul 25 2022 15:34:45 GMT+0300 (Eastern European Summer Time)
+[debug] [2022-07-25T12:34:45.176Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-07-25T12:34:45.262Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-07-25T12:34:45.263Z] > authorizing via signed-in user (anastasia.chaplits@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2022-07-25T12:34:45.321Z] [hub] writing locator at /var/folders/_b/g6kx4b6n05d8g_j03_xrgd940000gn/T/hub-mealstogo-4c072.json
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[info] ✔  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-07-25T12:34:45.672Z] defaultcredentials: writing to file /Users/anastasiiachaplits/.config/firebase/anastasia_chaplits_gmail.com_application_default_credentials.json
+[debug] [2022-07-25T12:34:45.675Z] Setting GAC to /Users/anastasiiachaplits/.config/firebase/anastasia_chaplits_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/anastasiiachaplits/.config/firebase/anastasia_chaplits_gmail.com_application_default_credentials.json"}}
+[debug] [2022-07-25T12:34:45.678Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/mealstogo-4c072/adminSdkConfig [none]
+[debug] [2022-07-25T12:34:46.069Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/mealstogo-4c072/adminSdkConfig 200
+[debug] [2022-07-25T12:34:46.071Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/mealstogo-4c072/adminSdkConfig {"projectId":"mealstogo-4c072","storageBucket":"mealstogo-4c072.appspot.com"}
+[info] i  ui: downloading ui-v1.8.1.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.8.1.zip..."}}
+[debug] [2022-07-25T12:34:46.131Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.8.1.zip 
+[debug] [2022-07-25T12:34:46.401Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.8.1.zip 200
+[debug] [2022-07-25T12:34:46.402Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.8.1.zip [stream]
+[debug] [2022-07-25T12:34:46.778Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-07-25T12:34:46.779Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-07-25T12:34:46.779Z] Starting Emulator UI with command {"binary":"node","args":["/Users/anastasiiachaplits/.cache/firebase/emulators/ui-v1.8.1/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/anastasiiachaplits/.cache/firebase/emulators/ui-v1.8.1/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-07-25T12:34:46.901Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "/Users/anastasiiachaplits/react-apps/MealsToGo/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/anastasiiachaplits/react-apps/MealsToGo/functions\" for Cloud Functions..."}}
+[debug] [2022-07-25T12:34:47.081Z] Validating nodejs source
+[debug] [2022-07-25T12:34:48.557Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-25T12:34:48.558Z] Building nodejs source
+[debug] [2022-07-25T12:34:48.558Z] Analyzing nodejs backend spec
+[debug] [2022-07-25T12:34:48.560Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-25T12:34:48.878Z] Serving at port 9005
+
+[debug] [2022-07-25T12:34:48.934Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-25T12:34:48.945Z] shutdown requested via /__/quitquitquit
+
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ localhost:5001 │ http://localhost:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-07-25T12:35:23.786Z] File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/index.js changed, reloading triggers"}}
+[debug] [2022-07-25T12:35:24.812Z] Validating nodejs source
+[debug] [2022-07-25T12:35:33.070Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-25T12:35:33.071Z] Building nodejs source
+[debug] [2022-07-25T12:35:33.071Z] Analyzing nodejs backend spec
+[debug] [2022-07-25T12:35:33.072Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-25T12:35:33.334Z] Serving at port 9005
+
+[debug] [2022-07-25T12:35:33.387Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-25T12:35:33.397Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions[us-central1-helloWorld]: http function initialized (http://localhost:5001/mealstogo-4c072/us-central1/helloWorld). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/mealstogo-4c072/us-central1/helloWorld)."}}
+[debug] [2022-07-25T12:39:40.187Z] Functions emulator received unknown request at path /
+[debug] [2022-07-25T12:39:40.265Z] Functions emulator received unknown request at path /favicon.ico
+[debug] [2022-07-25T12:40:38.401Z] File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/index.js changed, reloading triggers"}}
+[debug] [2022-07-25T12:40:39.411Z] Validating nodejs source
+[debug] [2022-07-25T12:40:41.009Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-25T12:40:41.010Z] Building nodejs source
+[debug] [2022-07-25T12:40:41.010Z] Analyzing nodejs backend spec
+[debug] [2022-07-25T12:40:41.010Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-25T12:40:41.279Z] Serving at port 9005
+
+[debug] [2022-07-25T12:40:41.343Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-25T12:40:41.359Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-07-25T12:42:45.975Z] File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/index.js changed, reloading triggers"}}
+[debug] [2022-07-25T12:42:46.986Z] Validating nodejs source
+[debug] [2022-07-25T12:42:48.493Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-25T12:42:48.494Z] Building nodejs source
+[debug] [2022-07-25T12:42:48.494Z] Analyzing nodejs backend spec
+[debug] [2022-07-25T12:42:48.494Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-25T12:42:48.767Z] Serving at port 9005
+
+[debug] [2022-07-25T12:42:48.826Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-25T12:42:48.835Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions[us-central1-geocode]: http function initialized (http://localhost:5001/mealstogo-4c072/us-central1/geocode). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/mealstogo-4c072/us-central1/geocode)."}}
+[debug] [2022-07-25T12:43:18.276Z] File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/index.js changed, reloading triggers"}}
+[debug] [2022-07-25T12:43:19.280Z] Validating nodejs source
+[debug] [2022-07-25T12:43:20.845Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-25T12:43:20.846Z] Building nodejs source
+[debug] [2022-07-25T12:43:20.846Z] Analyzing nodejs backend spec
+[debug] [2022-07-25T12:43:20.846Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-25T12:43:21.124Z] Serving at port 9005
+
+[debug] [2022-07-25T12:43:21.202Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-25T12:43:21.217Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-07-25T12:44:15.637Z] File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/index.js changed, reloading triggers"}}
+[debug] [2022-07-25T12:44:15.640Z] File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2022-07-25T12:44:16.647Z] Validating nodejs source
+[debug] [2022-07-25T12:44:18.096Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-25T12:44:18.097Z] Building nodejs source
+[debug] [2022-07-25T12:44:18.097Z] Analyzing nodejs backend spec
+[debug] [2022-07-25T12:44:18.098Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-25T12:44:18.371Z] Serving at port 9005
+
+[debug] [2022-07-25T12:44:18.437Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-25T12:44:18.445Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-07-25T12:44:27.845Z] File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2022-07-25T12:44:28.852Z] Validating nodejs source
+[debug] [2022-07-25T12:44:30.333Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-25T12:44:30.334Z] Building nodejs source
+[debug] [2022-07-25T12:44:30.334Z] Analyzing nodejs backend spec
+[debug] [2022-07-25T12:44:30.334Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-25T12:44:30.608Z] Serving at port 9005
+
+[debug] [2022-07-25T12:44:30.669Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-25T12:44:30.676Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-07-25T12:44:31.533Z] File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/index.js changed, reloading triggers"}}
+[debug] [2022-07-25T12:44:32.547Z] Validating nodejs source
+[debug] [2022-07-25T12:44:34.063Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-25T12:44:34.064Z] Building nodejs source
+[debug] [2022-07-25T12:44:34.064Z] Analyzing nodejs backend spec
+[debug] [2022-07-25T12:44:34.064Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-25T12:44:34.314Z] Serving at port 9005
+
+[debug] [2022-07-25T12:44:34.372Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-25T12:44:34.380Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-07-25T12:44:49.371Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-07-25T12:44:49.372Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-07-25T12:44:49.374Z] Accepted request GET /mealstogo-4c072/us-central1/geocode --> us-central1-geocode
+[debug] [2022-07-25T12:44:49.409Z] [worker-pool] addWorker(us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-geocode)"}}
+[debug] [2022-07-25T12:44:49.409Z] [worker-pool] Adding worker with key us-central1-geocode, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-geocode, total=1"}}
+[debug] [2022-07-25T12:44:49.409Z] [worker-pool] submitWork(triggerId=us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-geocode)"}}
+[debug] [2022-07-25T12:44:49.410Z] [worker-us-central1-geocode-377dc463-df6e-4442-8422-6b9153901b9d]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-377dc463-df6e-4442-8422-6b9153901b9d]: BUSY"}}
+[debug] [2022-07-25T12:44:50.401Z] [runtime-status] [10198] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/anastasiiachaplits/react-apps/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10198] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/anastasiiachaplits/react-apps/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-07-25T12:44:50.402Z] [runtime-status] [10198] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"/Users/anastasiiachaplits/react-apps/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10198] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"/Users/anastasiiachaplits/react-apps/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-07-25T12:44:50.402Z] [runtime-status] [10198] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10198] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-07-25T12:44:50.403Z] [runtime-status] [10198] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"/Users/anastasiiachaplits/react-apps/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10198] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"/Users/anastasiiachaplits/react-apps/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-07-25T12:44:50.431Z] [runtime-status] [10198] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10198] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-07-25T12:44:50.431Z] [runtime-status] [10198] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.22.0","resolution":"/Users/anastasiiachaplits/react-apps/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10198] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"/Users/anastasiiachaplits/react-apps/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-07-25T12:44:50.432Z] [runtime-status] [10198] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"/Users/anastasiiachaplits/react-apps/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10198] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"/Users/anastasiiachaplits/react-apps/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-07-25T12:44:50.434Z] [runtime-status] [10198] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/anastasiiachaplits/react-apps/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10198] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/anastasiiachaplits/react-apps/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-07-25T12:44:50.434Z] [runtime-status] [10198] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.22.0","resolution":"/Users/anastasiiachaplits/react-apps/MealsToGo/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10198] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.22.0\",\"resolution\":\"/Users/anastasiiachaplits/react-apps/MealsToGo/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-07-25T12:44:50.435Z] [runtime-status] [10198] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/anastasiiachaplits/react-apps/MealsToGo/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10198] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/anastasiiachaplits/react-apps/MealsToGo/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-07-25T12:44:50.435Z] [runtime-status] [10198] Functions runtime initialized. {"cwd":"/Users/anastasiiachaplits/react-apps/MealsToGo/functions","node_version":"16.14.2"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10198] Functions runtime initialized. {\"cwd\":\"/Users/anastasiiachaplits/react-apps/MealsToGo/functions\",\"node_version\":\"16.14.2\"}"}}
+[debug] [2022-07-25T12:44:50.441Z] [runtime-status] [10198] Beginning invocation function geocode! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10198] Beginning invocation function geocode!"}}
+[info] i  functions: Beginning execution of "geocode" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Beginning execution of \"geocode\""}}
+[debug] [2022-07-25T12:44:50.444Z] [runtime-status] [10198] Running geocode in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10198] Running geocode in signature http"}}
+[debug] [2022-07-25T12:44:50.447Z] [runtime-status] [10198] Attempting to listen to port: /var/folders/_b/g6kx4b6n05d8g_j03_xrgd940000gn/T/fire_emu_81b1180d920324be.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10198] Attempting to listen to port: /var/folders/_b/g6kx4b6n05d8g_j03_xrgd940000gn/T/fire_emu_81b1180d920324be.sock"}}
+[debug] [2022-07-25T12:44:50.552Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-07-25T12:44:50.553Z] [functions] Got req.url=/mealstogo-4c072/us-central1/geocode, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/mealstogo-4c072/us-central1/geocode, mapping to path=/"}}
+[debug] [2022-07-25T12:44:50.562Z] [runtime-status] [10198] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10198] Ephemeral server handling GET request"}}
+[debug] [2022-07-25T12:44:50.566Z] [runtime-status] [10198] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"[runtime-status] [10198] Ephemeral server survived."}}
+[info] i  functions: Finished "geocode" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-geocode"},"extension":{},"message":"Finished \"geocode\" in ~1s"}}
+[debug] [2022-07-25T12:44:50.568Z] [worker-us-central1-geocode-377dc463-df6e-4442-8422-6b9153901b9d]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-377dc463-df6e-4442-8422-6b9153901b9d]: IDLE"}}
+[debug] [2022-07-25T12:44:50.569Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-07-25T12:45:32.396Z] File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/geocode.mock.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/geocode.mock.js changed, reloading triggers"}}
+[debug] [2022-07-25T12:45:33.398Z] [worker-pool] Shutting down IDLE worker (us-central1-geocode) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-geocode)"}}
+[debug] [2022-07-25T12:45:33.399Z] [worker-us-central1-geocode-377dc463-df6e-4442-8422-6b9153901b9d]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-377dc463-df6e-4442-8422-6b9153901b9d]: FINISHING"}}
+[debug] [2022-07-25T12:45:33.403Z] Validating nodejs source
+[debug] [2022-07-25T12:45:35.707Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-25T12:45:35.708Z] Building nodejs source
+[debug] [2022-07-25T12:45:35.708Z] Analyzing nodejs backend spec
+[debug] [2022-07-25T12:45:35.709Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-25T12:45:35.733Z] [worker-us-central1-geocode-377dc463-df6e-4442-8422-6b9153901b9d]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-377dc463-df6e-4442-8422-6b9153901b9d]: exited"}}
+[debug] [2022-07-25T12:45:35.733Z] [worker-us-central1-geocode-377dc463-df6e-4442-8422-6b9153901b9d]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-geocode-377dc463-df6e-4442-8422-6b9153901b9d]: FINISHED"}}
+[debug] [2022-07-25T12:45:35.982Z] Serving at port 9005
+
+[debug] [2022-07-25T12:45:36.035Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-25T12:45:36.045Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-07-25T12:45:44.825Z] File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/geocode.mock.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/geocode.mock.js changed, reloading triggers"}}
+[debug] [2022-07-25T12:45:45.829Z] Validating nodejs source
+[debug] [2022-07-25T12:45:47.262Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-25T12:45:47.262Z] Building nodejs source
+[debug] [2022-07-25T12:45:47.262Z] Analyzing nodejs backend spec
+[debug] [2022-07-25T12:45:47.263Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-25T12:45:47.510Z] Serving at port 9005
+
+[debug] [2022-07-25T12:45:47.566Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-25T12:45:47.575Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-07-25T12:46:55.629Z] File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2022-07-25T12:46:56.648Z] Validating nodejs source
+[debug] [2022-07-25T12:46:58.113Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-25T12:46:58.114Z] Building nodejs source
+[debug] [2022-07-25T12:46:58.114Z] Analyzing nodejs backend spec
+[debug] [2022-07-25T12:46:58.115Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-25T12:46:58.365Z] Serving at port 9005
+
+[debug] [2022-07-25T12:46:58.419Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-25T12:46:58.429Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-07-25T12:47:00.397Z] File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2022-07-25T12:47:01.403Z] Validating nodejs source
+[debug] [2022-07-25T12:47:02.828Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-25T12:47:02.829Z] Building nodejs source
+[debug] [2022-07-25T12:47:02.829Z] Analyzing nodejs backend spec
+[debug] [2022-07-25T12:47:02.830Z] File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2022-07-25T12:47:02.830Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-25T12:47:03.080Z] Serving at port 9005
+
+[debug] [2022-07-25T12:47:03.136Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-25T12:47:03.144Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-07-25T12:47:03.851Z] Validating nodejs source
+[debug] [2022-07-25T12:47:05.246Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-25T12:47:05.247Z] Building nodejs source
+[debug] [2022-07-25T12:47:05.247Z] Analyzing nodejs backend spec
+[debug] [2022-07-25T12:47:05.249Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-25T12:47:05.501Z] Serving at port 9005
+
+[debug] [2022-07-25T12:47:05.551Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-25T12:47:05.563Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-07-25T12:47:23.976Z] File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2022-07-25T12:47:24.983Z] Validating nodejs source
+[debug] [2022-07-25T12:47:26.423Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-25T12:47:26.424Z] Building nodejs source
+[debug] [2022-07-25T12:47:26.424Z] Analyzing nodejs backend spec
+[debug] [2022-07-25T12:47:26.424Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-25T12:47:26.687Z] Serving at port 9005
+
+[debug] [2022-07-25T12:47:26.744Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-25T12:47:26.754Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-07-25T12:47:28.222Z] File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2022-07-25T12:47:29.230Z] Validating nodejs source
+[debug] [2022-07-25T12:47:30.688Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-25T12:47:30.690Z] Building nodejs source
+[debug] [2022-07-25T12:47:30.690Z] Analyzing nodejs backend spec
+[debug] [2022-07-25T12:47:30.691Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-25T12:47:30.947Z] Serving at port 9005
+
+[debug] [2022-07-25T12:47:31.006Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-25T12:47:31.022Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-07-25T12:47:33.625Z] File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2022-07-25T12:47:34.640Z] Validating nodejs source
+[debug] [2022-07-25T12:47:36.053Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-25T12:47:36.054Z] Building nodejs source
+[debug] [2022-07-25T12:47:36.054Z] Analyzing nodejs backend spec
+[debug] [2022-07-25T12:47:36.056Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-25T12:47:36.310Z] Serving at port 9005
+
+[debug] [2022-07-25T12:47:36.364Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-25T12:47:36.372Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-07-25T12:47:41.516Z] File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2022-07-25T12:47:42.519Z] Validating nodejs source
+[debug] [2022-07-25T12:47:43.937Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-25T12:47:43.938Z] Building nodejs source
+[debug] [2022-07-25T12:47:43.938Z] Analyzing nodejs backend spec
+[debug] [2022-07-25T12:47:43.939Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-25T12:47:44.191Z] Serving at port 9005
+
+[debug] [2022-07-25T12:47:44.243Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-25T12:47:44.254Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-07-25T12:47:53.749Z] File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2022-07-25T12:47:54.753Z] Validating nodejs source
+[debug] [2022-07-25T12:47:56.235Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-25T12:47:56.235Z] Building nodejs source
+[debug] [2022-07-25T12:47:56.235Z] Analyzing nodejs backend spec
+[debug] [2022-07-25T12:47:56.236Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-25T12:47:56.490Z] Serving at port 9005
+
+[debug] [2022-07-25T12:47:56.547Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-25T12:47:56.555Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-07-25T12:48:18.602Z] File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2022-07-25T12:48:19.623Z] Validating nodejs source
+[debug] [2022-07-25T12:48:20.992Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-25T12:48:20.993Z] Building nodejs source
+[debug] [2022-07-25T12:48:20.993Z] Analyzing nodejs backend spec
+[debug] [2022-07-25T12:48:20.994Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-25T12:48:21.243Z] Serving at port 9005
+
+[debug] [2022-07-25T12:48:21.298Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-25T12:48:21.306Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-07-25T12:48:24.844Z] File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2022-07-25T12:48:24.943Z] File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2022-07-25T12:48:25.950Z] Validating nodejs source
+[debug] [2022-07-25T12:48:27.373Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-25T12:48:27.374Z] Building nodejs source
+[debug] [2022-07-25T12:48:27.374Z] Analyzing nodejs backend spec
+[debug] [2022-07-25T12:48:27.376Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-25T12:48:27.627Z] Serving at port 9005
+
+[debug] [2022-07-25T12:48:27.684Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-25T12:48:27.691Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-07-25T12:48:32.889Z] File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2022-07-25T12:48:33.903Z] Validating nodejs source
+[debug] [2022-07-25T12:48:35.367Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-25T12:48:35.367Z] Building nodejs source
+[debug] [2022-07-25T12:48:35.368Z] Analyzing nodejs backend spec
+[debug] [2022-07-25T12:48:35.369Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-25T12:48:35.635Z] Serving at port 9005
+
+[debug] [2022-07-25T12:48:35.689Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-25T12:48:35.696Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-07-25T12:48:39.233Z] File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2022-07-25T12:48:40.242Z] Validating nodejs source
+[debug] [2022-07-25T12:48:41.690Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-25T12:48:41.691Z] Building nodejs source
+[debug] [2022-07-25T12:48:41.691Z] Analyzing nodejs backend spec
+[debug] [2022-07-25T12:48:41.692Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-25T12:48:41.944Z] Serving at port 9005
+
+[debug] [2022-07-25T12:48:41.999Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-25T12:48:42.006Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-07-25T12:48:58.472Z] File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2022-07-25T12:48:59.487Z] Validating nodejs source
+[debug] [2022-07-25T12:49:00.903Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-25T12:49:00.903Z] Building nodejs source
+[debug] [2022-07-25T12:49:00.903Z] Analyzing nodejs backend spec
+[debug] [2022-07-25T12:49:00.905Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-25T12:49:01.161Z] Serving at port 9005
+
+[debug] [2022-07-25T12:49:01.209Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-25T12:49:01.215Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-07-25T12:49:19.612Z] File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2022-07-25T12:49:20.618Z] Validating nodejs source
+[debug] [2022-07-25T12:49:22.085Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-25T12:49:22.086Z] Building nodejs source
+[debug] [2022-07-25T12:49:22.086Z] Analyzing nodejs backend spec
+[debug] [2022-07-25T12:49:22.087Z] File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2022-07-25T12:49:22.087Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-25T12:49:22.340Z] Serving at port 9005
+
+[debug] [2022-07-25T12:49:22.398Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-25T12:49:22.407Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-07-25T12:49:23.108Z] Validating nodejs source
+[debug] [2022-07-25T12:49:24.502Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-25T12:49:24.502Z] Building nodejs source
+[debug] [2022-07-25T12:49:24.503Z] Analyzing nodejs backend spec
+[debug] [2022-07-25T12:49:24.504Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-25T12:49:24.759Z] Serving at port 9005
+
+[debug] [2022-07-25T12:49:24.816Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-25T12:49:24.824Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-07-25T12:49:29.067Z] File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2022-07-25T12:49:30.081Z] Validating nodejs source
+[debug] [2022-07-25T12:49:31.500Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-25T12:49:31.501Z] Building nodejs source
+[debug] [2022-07-25T12:49:31.501Z] Analyzing nodejs backend spec
+[debug] [2022-07-25T12:49:31.504Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-25T12:49:31.761Z] Serving at port 9005
+
+[debug] [2022-07-25T12:49:31.822Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-25T12:49:31.841Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-07-25T12:50:01.740Z] File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2022-07-25T12:50:02.751Z] Validating nodejs source
+[debug] [2022-07-25T12:50:04.202Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-25T12:50:04.203Z] Building nodejs source
+[debug] [2022-07-25T12:50:04.203Z] Analyzing nodejs backend spec
+[debug] [2022-07-25T12:50:04.204Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-25T12:50:04.466Z] Serving at port 9005
+
+[debug] [2022-07-25T12:50:04.630Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-25T12:50:04.635Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-07-25T12:50:12.852Z] File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2022-07-25T12:50:13.856Z] Validating nodejs source
+[debug] [2022-07-25T12:50:15.290Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-25T12:50:15.291Z] Building nodejs source
+[debug] [2022-07-25T12:50:15.291Z] Analyzing nodejs backend spec
+[debug] [2022-07-25T12:50:15.292Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-25T12:50:15.548Z] Serving at port 9005
+
+[debug] [2022-07-25T12:50:15.598Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-25T12:50:15.606Z] shutdown requested via /__/quitquitquit
+
+[debug] [2022-07-25T12:51:11.497Z] File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /Users/anastasiiachaplits/react-apps/MealsToGo/functions/geocode/index.js changed, reloading triggers"}}
+[debug] [2022-07-25T12:51:12.524Z] Validating nodejs source
+[debug] [2022-07-25T12:51:13.979Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-07-25T12:51:13.980Z] Building nodejs source
+[debug] [2022-07-25T12:51:13.980Z] Analyzing nodejs backend spec
+[debug] [2022-07-25T12:51:13.982Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-07-25T12:51:14.236Z] Serving at port 9005
+
+[debug] [2022-07-25T12:51:14.399Z] Got response from /__/functions.yaml {"endpoints":{"geocode":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"geocode"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-07-25T12:51:14.407Z] shutdown requested via /__/quitquitquit
+
