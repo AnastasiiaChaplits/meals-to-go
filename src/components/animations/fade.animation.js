@@ -13,10 +13,10 @@ export const FadeInView = ({ duration = 1500, ...props }) => {
   }, [fadeAnim, duration]);
 
   return (
-    <Animated.View
+    <Animated.View // Special animatable View
       style={{
         ...props.style,
-        opacity: fadeAnim,
+        opacity: fadeAnim, // Bind opacity to animated value
       }}
     >
       {props.children}

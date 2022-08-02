@@ -1,4 +1,5 @@
 import React, { useState, useContext } from "react";
+
 import { ActivityIndicator, Colors } from "react-native-paper";
 
 import {
@@ -18,7 +19,7 @@ export const RegisterScreen = ({ navigation }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [repeatedPassword, setRepeatedPassword] = useState("");
-  const { onRegister, error, isLoading } = useContext(AuthenticationContext);
+  const { onRegister, isLoading, error } = useContext(AuthenticationContext);
   return (
     <AccountBackground>
       <AccountCover />

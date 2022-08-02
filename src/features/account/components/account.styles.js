@@ -4,7 +4,7 @@ import { colors } from "../../../infrastructure/theme/colors";
 import { Text } from "../../../components/typography/text.component";
 
 export const AccountBackground = styled.ImageBackground.attrs({
-  source: require("../../../../assets/home_bg.jpeg"),
+  source: require("../../../../assets/home_bg.jpg"),
 })`
   flex: 1;
   align-items: center;
@@ -28,12 +28,10 @@ export const AuthButton = styled(Button).attrs({
   color: colors.brand.primary,
 })`
   padding: ${(props) => props.theme.space[2]};
-  margin-bottom: ${(props) => props.theme.space[2]};
 `;
 
 export const AuthInput = styled(TextInput)`
   width: 300px;
-  margin-bottom: ${(props) => props.theme.space[2]};
 `;
 
 export const Title = styled(Text)`

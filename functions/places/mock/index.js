@@ -1,7 +1,7 @@
-const antwerp = require("./antwerp");
-const chicago = require("./chicago");
-const toronto = require("./toronto");
-const san_francisco = require("./san_francisco");
+const antwerp = require("./antwerp.js");
+const chicago = require("./chicago.js");
+const toronto = require("./toronto.js");
+const san_francisco = require("./san_francisco.js");
 
 module.exports.mocks = {
   "51.219448,4.402464": antwerp,
@@ -21,8 +21,9 @@ const mockImages = [
 ];
 
 module.exports.addMockImage = (restaurant) => {
-  const randomImage =
-    mockImages[Math.ceil(Math.random() * (mockImages.length - 1))];
-  restaurant.photos = [randomImage];
+  restaurant.photos = [
+    mockImages[Math.ceil(Math.random() * (mockImages.length - 1))],
+  ];
+
   return restaurant;
 };
